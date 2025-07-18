@@ -62,3 +62,5 @@ coverage.xml
 
 # MyPy
 .mypy_cache/
+
+*lightning_logs*
