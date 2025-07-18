@@ -1,0 +1,64 @@
+*data*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code settings
+.vscode/
+
+# macOS + Linux hidden files
+.DS_Store
+
+# Log files and local databases
+*.log
+*.sqlite3
+
+# Python-specific
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# Test and coverage
+htmlcov/
+.tox/
+.coverage
+.cache/
+.noseids
+
+# Pip environment files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE configs (PyCharm, etc.)
+.idea/
+
+# Unit test / coverage reports
+*.cover
+*.py,cover
+coverage.xml
+*.mo
+*.pot
+
+# PyInstaller
+*.spec
+
+
+*.json
+*.pdf
+.env
+
+# MyPy
+.mypy_cache/
