@@ -184,9 +184,8 @@ def quant_norm_data(
     """
     masked_data = np.ma.masked_equal(data, 0)
     lq, uq = np.quantile(masked_data.compressed(), (lower_quant, upper_quant))
-    print(lq, uq)
     data = np.clip(masked_data, a_min=lq, a_max=uq)
-    data = (data -lq) / (uq - lq)
+    data = (data - lq) / (uq - lq)
     return data
 
 
