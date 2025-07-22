@@ -214,3 +214,12 @@ def vis(data: np.ndarray, quant_norm: bool = False):
         raise ValueError(f"Expected data to have 2 or 3 dimensions, but got {data.ndim} dimensions.")
     plt.axis("off")
     plt.show()
+
+
+# my own method
+def normalize_rgb(rgb):
+    rgb_norm = np.zeros_like(rgb, dtype=np.float32)
+    for i in range(3): # loop over R G B Channels 
+        band = rgb[:, :, i]
+        rgb_norm[:, :, i] = (band - band.min()) / (band.max() - band.min() + 1e-6)
+    return rgb_norm
